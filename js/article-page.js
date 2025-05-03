@@ -1,9 +1,3 @@
-/**
- * Article Page Script
- * -------------------
- * Handles loading of navbar and footer for article pages
- */
-
 // Import component loader
 import ComponentLoader from "./utils/component-loader.js";
 

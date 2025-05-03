@@ -1,10 +1,4 @@
 /**
- * Scroll Utilities
- * ---------------
- * Functions related to scrolling behavior
- */
-
-/**
  * Initializes smooth scrolling for anchor links
  */
 export function initSmoothScrolling() {

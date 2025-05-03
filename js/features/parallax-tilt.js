@@ -1,10 +1,4 @@
 /**
- * Parallax Image Tilt Effect
- * ------------------------
- * Creates 3D tilt effect for about image
- */
-
-/**
  * Initializes parallax tilt effect
  */
 export function initParallaxTiltEffect() {

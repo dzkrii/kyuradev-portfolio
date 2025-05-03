@@ -1,10 +1,4 @@
 /**
- * Text Scramble Effect
- * ------------------
- * Creates text scramble effect for hero title
- */
-
-/**
  * Initializes text scramble effect
  */
 export function initTextScrambleEffect() {

@@ -1,10 +1,4 @@
 /**
- * Particle Background Animation
- * ----------------------------
- * Creates interactive particle background for hero section
- */
-
-/**
  * Initializes particle background animation
  */
 export function initParticleBackground() {

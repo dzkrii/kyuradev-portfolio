@@ -1,10 +1,4 @@
 /**
- * Theme Toggle Functionality
- * -------------------------
- * Handles dark/light mode switching
- */
-
-/**
  * Initializes theme toggle functionality
  */
 export function initThemeToggle() {

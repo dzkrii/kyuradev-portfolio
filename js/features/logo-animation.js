@@ -1,10 +1,4 @@
 /**
- * SVG Path Animation for Logo
- * -------------------------
- * Creates animated SVG logo
- */
-
-/**
  * Initializes logo animation
  */
 export function initLogoAnimation() {

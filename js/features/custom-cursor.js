@@ -1,10 +1,4 @@
 /**
- * Custom Interactive Cursor
- * ------------------------
- * Creates a custom interactive cursor effect
- */
-
-/**
  * Initializes custom cursor effect
  */
 export function initCustomCursor() {

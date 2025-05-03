@@ -1,10 +1,4 @@
 /**
- * Navbar Component
- * ---------------
- * Handles navbar functionality
- */
-
-/**
  * Initializes all navbar functionality
  */
 export function initNavbar() {

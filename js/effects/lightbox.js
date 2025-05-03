@@ -1,10 +1,4 @@
 /**
- * Lightbox Effect
- * -------------
- * Creates image lightbox for portfolio items
- */
-
-/**
  * Initializes lightbox for portfolio images
  */
 export function initLightbox() {

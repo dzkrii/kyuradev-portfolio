@@ -1,10 +1,4 @@
 /**
- * Portfolio Component
- * ------------------
- * Handles portfolio filtering functionality
- */
-
-/**
  * Initializes portfolio filtering
  */
 export function initPortfolioFilter() {

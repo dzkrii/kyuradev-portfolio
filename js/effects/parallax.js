@@ -1,10 +1,4 @@
 /**
- * Parallax Effect
- * --------------
- * Handles parallax scrolling effect
- */
-
-/**
  * Initializes parallax effect
  */
 export function initParallax() {

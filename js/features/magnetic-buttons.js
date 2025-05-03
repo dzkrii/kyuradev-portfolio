@@ -1,10 +1,4 @@
 /**
- * Magnetic Effect for Buttons
- * -------------------------
- * Creates magnetic hover effect for buttons
- */
-
-/**
  * Initializes magnetic effect for buttons
  */
 export function initMagneticEffect() {

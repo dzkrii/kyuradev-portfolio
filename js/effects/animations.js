@@ -1,10 +1,4 @@
 /**
- * Animations
- * ---------
- * Handles general animations in the website
- */
-
-/**
  * Initializes all animations
  */
 export function initAnimations() {

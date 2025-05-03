@@ -1,10 +1,4 @@
 /**
- * 3D Hover Effect for Portfolio Cards
- * ----------------------------------
- * Creates 3D tilt effect for portfolio items
- */
-
-/**
  * Initializes 3D hover effect for portfolio cards
  */
 export function initPortfolio3DHover() {

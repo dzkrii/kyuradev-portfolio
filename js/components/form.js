@@ -1,10 +1,4 @@
 /**
- * Form Component
- * -------------
- * Handles form validation and submission
- */
-
-/**
  * Initializes all forms
  */
 export function initForms() {

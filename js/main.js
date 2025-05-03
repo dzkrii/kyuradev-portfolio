@@ -1,15 +1,7 @@
-/**
- * Main JavaScript Entry Point
- * -----------------------------
- * Website Portfolio Project
- * Author: KyuraDev
- */
-
 // Import component loader
 import ComponentLoader from "./utils/component-loader.js";
 
 // Import utility modules
-import { initPreloader } from "./utils/preloader.js";
 import { initThemeToggle } from "./utils/theme-toggle.js";
 import {
   initSmoothScrolling,
@@ -46,7 +38,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   await loadAllComponents();
 
   // Initialize utilities
-  // initPreloader();
   initThemeToggle();
   initSmoothScrolling();
   initBackToTop();
@@ -66,7 +57,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // Initialize special features
   if (window.innerWidth > 991) {
-    // Only on desktop
     initCustomCursor();
     initPortfolio3DHover();
     initParticleBackground();
@@ -79,19 +69,15 @@ document.addEventListener("DOMContentLoaded", async function () {
   console.log("Application initialized successfully");
 });
 
-/**
- * Loads all HTML components
- */
 async function loadAllComponents() {
   const isArticlePage = document.body.classList.contains("article-page");
 
-  // Components that are needed on all pages
+  // Components NavBar and Footer
   const commonComponents = [
     { path: "components/navbar.html", targetId: "navbar" },
     { path: "components/footer.html", targetId: "footer" },
   ];
 
-  // Components only needed on the main page
   const mainPageComponents = [
     { path: "components/hero.html", targetId: "hero" },
     { path: "components/about.html", targetId: "about" },

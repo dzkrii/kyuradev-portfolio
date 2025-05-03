@@ -1,10 +1,4 @@
 /**
- * Articles Component
- * -----------------
- * Handles article filtering functionality
- */
-
-/**
  * Initializes article category filtering
  */
 export function initArticleFilter() {

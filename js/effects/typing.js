@@ -1,10 +1,4 @@
 /**
- * Typing Effect
- * ------------
- * Handles typing animation effect for hero subtitle
- */
-
-/**
  * Initializes typing effect
  */
 export function initTypingEffect() {

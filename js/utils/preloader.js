@@ -1,10 +1,4 @@
 /**
- * Preloader Functionality
- * -----------------------
- * Handles website preloader animation
- */
-
-/**
  * Initializes the preloader
  */
 export function initPreloader() {
