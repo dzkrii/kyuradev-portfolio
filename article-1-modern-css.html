@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern CSS Techniques Every Developer Should Know - KyuraDev</title>
+
+    <!-- Bootstrap, Font Awesome, Google Fonts, AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/components/articles.css" />
+  </head>
+  <body class="article-page">
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div>
+
+    <!-- Article Content -->
+    <section class="article-detail-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- Back to Home Button -->
+            <a href="index.html" class="back-to-home" data-aos="fade-up">
+              <i class="fas fa-arrow-left"></i>
+              Back to Home
+            </a>
+
+            <div class="article-header" data-aos="fade-up">
+              <h1 class="article-title">
+                Modern CSS Techniques Every Developer Should Know
+              </h1>
+              <div class="article-meta">
+                <span class="article-date">April 15, 2025</span>
+                <span class="article-author">KyuraDev</span>
+              </div>
+            </div>
+
+            <div
+              class="article-featured-image"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="/img/articles/article-thumbnail.png"
+                alt="Modern CSS Techniques"
+                class="img-fluid"
+              />
+            </div>
+
+            <div
+              class="article-content"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                euismod eu lorem et ultricies. In porta lorem at dui semper, non
+                ullamcorper lorem tincidunt. Duis quis erat nulla. Sed
+                scelerisque, lectus eu volutpat eleifend, elit nunc tincidunt
+                est, in sagittis nulla felis id neque.
+              </p>
+
+              <h2>1. CSS Grid Layout</h2>
+              <p>
+                CSS Grid has revolutionized the way we create layouts on the
+                web. It provides a two-dimensional layout system that makes it
+                easier to design complex layouts without relying on floats or
+                positioning.
+              </p>
+              <p>
+                With CSS Grid, you can define rows and columns, place items
+                precisely where you want them, and create responsive layouts
+                with minimal code. It's particularly useful for creating
+                magazine-style layouts, dashboards, and complex web
+                applications.
+              </p>
+
+              <h2>2. Flexbox for Component Layout</h2>
+              <p>
+                While CSS Grid is excellent for overall page layouts, Flexbox
+                shines when it comes to component-level layouts. It's perfect
+                for creating navigation menus, card layouts, and aligning
+                elements within a container.
+              </p>
+              <p>
+                Flexbox's ability to distribute space and align items makes it
+                indispensable for creating responsive components that adapt to
+                different screen sizes.
+              </p>
+
+              <h2>3. CSS Custom Properties (Variables)</h2>
+              <p>
+                CSS Custom Properties, also known as CSS Variables, allow you to
+                define reusable values throughout your stylesheets. This makes
+                it easier to maintain consistent colors, spacing, and other
+                design tokens across your project.
+              </p>
+              <p>
+                By using CSS Variables, you can create themes, implement dark
+                mode, and make your CSS more maintainable and flexible.
+              </p>
+
+              <h2>4. Modern CSS Selectors</h2>
+              <p>
+                New CSS selectors like :has(), :is(), and :where() provide more
+                powerful ways to target elements. These selectors reduce the
+                need for JavaScript in many cases and allow for more elegant CSS
+                solutions.
+              </p>
+
+              <h2>5. Container Queries</h2>
+              <p>
+                Container Queries are a game-changer for responsive design.
+                Unlike media queries that respond to viewport size, container
+                queries allow components to adapt based on their container's
+                size, making truly modular and reusable components possible.
+              </p>
+
+              <h2>Conclusion</h2>
+              <p>
+                These modern CSS techniques are essential tools in any web
+                developer's toolkit. By mastering these concepts, you'll be able
+                to create more efficient, maintainable, and responsive web
+                applications that provide better user experiences across all
+                devices.
+              </p>
+            </div>
+
+            <div class="article-tags" data-aos="fade-up" data-aos-delay="300">
+              <span class="tag">CSS</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Frontend</span>
+              <span class="tag">Design</span>
+            </div>
+
+            <!-- Comments Section -->
+            <div
+              class="article-comments"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <h3>Comments</h3>
+
+              <!-- Comment Form -->
+              <div class="comment-form">
+                <h4>Leave a Comment</h4>
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <textarea
+                    class="form-control"
+                    placeholder="Your Comment"
+                    required
+                  ></textarea>
+                  <button type="submit" class="btn btn-primary">
+                    Submit Comment
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Main JavaScript (as module) -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

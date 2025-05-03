@@ -1,0 +1,105 @@
+/* 
+==============================================
+CONTACT.CSS
+==============================================
+Styles untuk contact section
+*/
+
+.contact-section {
+  background-color: var(--bg-color);
+}
+
+.contact-info {
+  background-color: var(--light-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.contact-info-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.contact-info-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.contact-info-content p {
+  margin-bottom: 0;
+}
+
+.contact-form-wrapper {
+  background-color: var(--light-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-form .form-control {
+  background-color: var(--bg-color);
+  border: none;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+.send-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: none;
+  transition: var(--transition);
+}
+
+.send-btn:hover {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+}

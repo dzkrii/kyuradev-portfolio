@@ -1,0 +1,124 @@
+/* 
+==============================================
+NAVBAR.CSS
+==============================================
+Styles untuk navigation bar
+*/
+
+#mainNav {
+  padding: 1rem 0;
+  transition: var(--transition);
+  background-color: transparent;
+}
+
+#mainNav.navbar-scrolled {
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+#mainNav.navbar-scrolled .navbar-brand {
+  color: var(--text-color);
+}
+
+.brand-text {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  color: #ffffff;
+}
+
+#mainNav.navbar-scrolled .navbar-toggler {
+  color: var(--text-color);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0 !important;
+  margin: 0 0.5rem;
+}
+
+#mainNav.navbar-scrolled .nav-link {
+  color: var(--text-color) !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  bottom: 0;
+  left: 0;
+  transition: var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+#mainNav.navbar-scrolled .theme-toggle {
+  color: var(--text-color);
+}
+
+.theme-toggle:hover {
+  color: var(--primary-color);
+  transform: rotate(30deg);
+}
+
+/* Article Page Specific Navbar Styles */
+.article-page #mainNav {
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem 0;
+}
+
+.article-page #mainNav .navbar-brand,
+.article-page #mainNav .nav-link,
+.article-page #mainNav .theme-toggle,
+.article-page #mainNav .navbar-toggler {
+  color: var(--text-color) !important;
+}
+
+/* Dark mode adjustments for article page */
+[data-theme="dark"] .article-page #mainNav {
+  background-color: var(--bg-color);
+}

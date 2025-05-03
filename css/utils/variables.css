@@ -1,0 +1,60 @@
+/* 
+==============================================
+VARIABLES.CSS
+==============================================
+CSS Variables untuk website portfolio
+*/
+
+:root {
+  /* Primary Colors - Light Mode */
+  --primary-color: #6c63ff;
+  --secondary-color: #55e6a5;
+  --text-color: #333333;
+  --light-text: #777777;
+  --bg-color: #ffffff;
+  --light-bg: #f8f9fa;
+  --dark-bg: #343a40;
+  --border-color: #e0e0e0;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+
+  /* Box Shadow */
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+  --primary-color: #8c83ff;
+  --secondary-color: #63e6b5;
+  --text-color: #f1f1f1;
+  --light-text: #bbbbbb;
+  --bg-color: #121212;
+  --light-bg: #1e1e1e;
+  --dark-bg: #2d2d2d;
+  --border-color: #3d3d3d;
+}
+
+/* Dark Mode Specific Adjustments */
+[data-theme="dark"] .navbar-collapse {
+  background-color: var(--bg-color);
+}
+
+[data-theme="dark"] .navbar-collapse .nav-link,
+[data-theme="dark"] .navbar-collapse .theme-toggle {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .navbar-scrolled {
+  background-color: var(--bg-color);
+}
+
+[data-theme="dark"] .form-control {
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: var(--light-text);
+}
