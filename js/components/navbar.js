@@ -17,6 +17,9 @@ export function initNavbar() {
   // Handle active link highlighting (skip for article pages)
   if (!isArticlePage) {
     initActiveNavLinks(navLinks);
+  } else {
+    // Set Articles link as active on article pages
+    setArticleLinkActive(navLinks);
   }
 
   // Close mobile menu when clicking on a nav link
@@ -38,6 +41,22 @@ export function initNavbar() {
         window.location.href = href;
       }
     });
+  });
+}
+
+/**
+ * Sets the Articles nav link as active on article pages
+ */
+function setArticleLinkActive(navLinks) {
+  navLinks.forEach((navLink) => {
+    navLink.classList.remove("active");
+    // Check if this is the Articles link
+    if (
+      navLink.getAttribute("href") === "#articles" ||
+      navLink.getAttribute("href") === "index.html#articles"
+    ) {
+      navLink.classList.add("active");
+    }
   });
 }
 
@@ -82,7 +101,23 @@ function initNavbarScrollEffect(mainNav) {
 function initActiveNavLinks(navLinks) {
   function updateActiveLink() {
     const scrollPosition = window.scrollY + 100;
+    const homeSection = document.getElementById("home");
 
+    // Special handling for home section when at the top of the page
+    if (
+      scrollPosition <
+      (homeSection?.offsetTop + homeSection?.offsetHeight || 500)
+    ) {
+      navLinks.forEach((navLink) => {
+        navLink.classList.remove("active");
+        if (navLink.getAttribute("href") === "#home") {
+          navLink.classList.add("active");
+        }
+      });
+      return;
+    }
+
+    // For other sections
     document.querySelectorAll("section").forEach((section) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
